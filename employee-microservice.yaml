@@ -1,0 +1,25 @@
+spring:
+    datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/employee?createTableIfNotExists=true
+    password: '12345'
+  jpa:
+    show_sql: 'true'
+    hibernate:
+      ddl-auto: update
+      
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+server:
+  port: 8081
+  servlet:
+    context-path: /employeeapi
+    
+eureka:
+  instance:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
