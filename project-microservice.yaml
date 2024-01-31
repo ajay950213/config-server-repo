@@ -12,10 +12,8 @@ spring:
     show-sql: true
     generate-ddl: true
     hibernate:
-      ddl-auto: update
-  application:
-    name: project-service       
-    
+      ddl-auto: update       
+      
 eureka:
   instance:
     client:
