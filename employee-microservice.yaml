@@ -1,22 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /projectapi
+    
 spring:
   datasource:
-  username: root
-  url: jdbc:mysql://localhost:3306/employee?createTableIfNotExists=true
-  password: '12345'
-  jpa:
-    show_sql: 'true'
+      username: root
+      password: 12345
+      url: jdbc:mysql://localhost:3306/project?createTableIfNotExists=true
+  jpa:     
+    show-sql: true
+    generate-ddl: true
     hibernate:
       ddl-auto: update
-      
-logging:
-  level:
-    org:
-      springframework:
-        web: DEBUG
-server:
-  port: 8081
-  servlet:
-    context-path: /employeeapi
+  application:
+    name: employee-service       
     
 eureka:
   instance:
