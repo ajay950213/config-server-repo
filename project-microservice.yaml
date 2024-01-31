@@ -21,4 +21,4 @@ eureka:
         defaultZone: http://localhost:8761/eureka/
 project: 
   properties:
-    message: "Hi Ajay Kumar.....!!!, Hello"
+    message: "Hi Ajay Kumar Hello"
